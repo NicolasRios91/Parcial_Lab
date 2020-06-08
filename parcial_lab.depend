@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1591633336 source:c:\users\nico\desktop\codeblock\parcial_lab\cliente.c
+	"Cliente.h"
+	"funciones.h"
+
+1591598740 c:\users\nico\desktop\codeblock\parcial_lab\cliente.h
+	"funciones.h"
+	"menu.h"
+
+1591598762 c:\users\nico\desktop\codeblock\parcial_lab\funciones.h
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	<conio.h>
+
+1591633277 c:\users\nico\desktop\codeblock\parcial_lab\menu.h
+	<stdio.h>
+
+1591632248 source:c:\users\nico\desktop\codeblock\parcial_lab\funciones.c
+	"funciones.h"
+
+1591647681 source:c:\users\nico\desktop\codeblock\parcial_lab\main.c
+	"Cliente-Mascota.h"
+
+1591646621 c:\users\nico\desktop\codeblock\parcial_lab\cliente-mascota.h
+	"funciones.h"
+	"Cliente.h"
+	"Mascota.h"
+	"menu.h"
+	"Raza.h"
+
+1591631958 c:\users\nico\desktop\codeblock\parcial_lab\mascota.h
+	"funciones.h"
+	"menu.h"
+
+1591633336 c:\users\nico\desktop\codeblock\parcial_lab\raza.h
+	<stdio.h>
+	<string.h>
+	"menu.h"
+
+1591647178 source:c:\users\nico\desktop\codeblock\parcial_lab\mascota.c
+	"Mascota.h"
+
+1591633391 source:c:\users\nico\desktop\codeblock\parcial_lab\menu.c
+	"menu.h"
+
+1591633418 source:c:\users\nico\desktop\codeblock\parcial_lab\raza.c
+	"Raza.h"
+
+1591647306 source:c:\users\nico\desktop\codeblock\parcial_lab\cliente-mascota.c
+	"Cliente-Mascota.h"
+
