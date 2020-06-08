@@ -28,7 +28,7 @@ void MostrarClienteYsusMastocas(eCliente listaClientes[],int sizeCliente,eMascot
 
         if(listaClientes[i].isEmpty==OCUPADO)
         {
-            printf("Nombre Cliente: %s ID:%d\n",listaClientes[i].nombre,listaClientes[i].id);
+            printf("Nombre Cliente: %s ID:%d  Localidad: %s\n ",listaClientes[i].nombre,listaClientes[i].id,listaClientes[i].localidad);
             for(j=0;j<sizeMascotas;j++)
             {
                 if (listaClientes[i].id == listaMascotas[j].idCliente && listaMascotas[j].isEmpty==OCUPADO)
@@ -190,7 +190,7 @@ int MostrarMascotasMasDeTresAniosConDuenio(eMascota listaMascotas[],int sizeMasc
     for (i=0;i<sizeMascotas;i++)
     {
         control = MascotaMayorAtresAnios(listaMascotas[i]);//para no imprimir todos las mascotas a la vez
-        if(control == 0)
+        if(control == 0) //0 = mayor a 3 años
         {
             if (retorno == -1)//para no repetir de nuevo el header
             {
@@ -267,7 +267,7 @@ void MostrarClientesPorCantidadesDeMascotasOrdenados(eCliente listaClientes[],in
     eCantidades aux;
     eCliente aux2;
     eCantidades auxiliar[sizeClientes];
-    //OrdenarPorNombre(listaClientes,sizeClientes);
+
     for (i=0;i<sizeClientes;i++)
     {
         auxiliar[i].idCliente = listaClientes[i].id;
@@ -368,7 +368,8 @@ void MostrarClientesConMascotasDelMismoSexo(eCliente listaClientes[],int sizeCli
     if (contadorClientesF>1)
     {
         printf("Clientes con mascotas hembra\n\n");//entre clientes
-        HeaderCliente("ID","NOMBRE","APELLIDO","LOCALIDAD","TELEFONO","EDAD","SEXO\n");
+        HeaderCliente("ID","NOMBRE","APELLIDO","LOCALIDAD","TELEFONO","EDAD","SEXO");
+        printf("    Cantidad\n");
         for (i=0;i<sizeClientes;i++)
         {
             for (j=0;j<sizeClientes;j++)
@@ -376,7 +377,7 @@ void MostrarClientesConMascotasDelMismoSexo(eCliente listaClientes[],int sizeCli
                 if (contadorF[j]>0 && listaClientes[i].isEmpty == OCUPADO && listaClientes[i].id == id[j])
                 {
                     MostrarUnCliente(listaClientes[i]);
-                    printf("\n");
+                    printf("%10d\n",contadorF[j]);
                     break;
                 }
             }
@@ -400,7 +401,6 @@ void MostrarClientesConMascotasDelMismoSexo(eCliente listaClientes[],int sizeCli
                 {
                     MostrarUnCliente(listaClientes[i]);
                     printf("%10d\n",contadorM[j]);
-
                     break;
                 }
             }

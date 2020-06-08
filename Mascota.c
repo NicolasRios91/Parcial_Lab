@@ -12,7 +12,7 @@ void HardcodearMascotas(eMascota listaMascotas[],int sizeMascotas)//PUNTO 2
 
     int edad[11]={10,10,2,8,6,1,10,3,3,4,4};//{1,2,1,3,1,2,1,2,1,1,1};
     float peso[11]={5,5,15,12,15,5,25,2,20,4,10};
-    char sexo [11]={'F','F','M','M','M','M','M','M','M','M','M'};
+    char sexo [11]={'F','F','M','M','M','M','F','M','M','M','M'};
     int idCliente[11]={1,1,2,2,2,3,3,4,5,5,5};
     for (i=0;i<11;i++)
     {
@@ -60,7 +60,7 @@ void InicializarMascotasLibre(eMascota listaMascotas[],int sizeMascotas)
     int i;
     for (i=0;i<sizeMascotas;i++)
     {
-        listaMascotas[i].isEmpty == LIBRE;
+        listaMascotas[i].isEmpty = LIBRE;
     }
 }
 
@@ -78,7 +78,6 @@ int BuscarMascotaLibre(eMascota listaMascotas[],int sizeMascotas)
     }
     return indice;
 }
-
 
 //PUNTO 4
 eMascota CargarMascota(int id)
@@ -321,6 +320,13 @@ void MostrarMascotasPorTipo(eMascota listaMascotas[],int sizeMascotas)
                 HeaderMascota("ID","NOMBRE","TIPO","RAZA","EDAD","PESO","SEXO\n");
                 for(i=0;i<sizeMascotas;i++)
                 {
+                    /*
+                    if (strcmp(listaMascotas[i].tipo,"Perro") == 0 && listaMascotas[i].isEmpty == OCUPADO)
+                    {
+                        MostrarUnaMascota(listaMascotas[i]);
+                        printf("\n");
+                    }
+                    */
                     CompararYMostrarTipoMascota(listaMascotas[i],"Perro");
                 }
                 printf("\n");
@@ -332,9 +338,7 @@ void MostrarMascotasPorTipo(eMascota listaMascotas[],int sizeMascotas)
                 for(i=0;i<sizeMascotas;i++)
                 {
                     CompararYMostrarTipoMascota(listaMascotas[i],"Gato");
-
                 }
-                printf("\n");
                 LimpiarPantalla();
                 break;
             case 3:
@@ -346,16 +350,15 @@ void MostrarMascotasPorTipo(eMascota listaMascotas[],int sizeMascotas)
                     {
                         MostrarUnaMascota(listaMascotas[i]);
                         printf("\n");
-
                     }
                 }
-                printf("\n");
                 LimpiarPantalla();
                 break;
             case 4:
                 break;
             default:
                 printf("Ingrese una opcion valida\n");
+                LimpiarPantalla();
         }
     }while(opcion!=4);
 }
@@ -372,7 +375,6 @@ void CompararYMostrarTipoMascota(eMascota UnaMascota,char tipo[])
         printf("\n");
     }
 }
-
 
 //PUNTO 16
 float SacarPromedioEdadMascotas(eMascota listaMascotas[],int sizeMascotas)

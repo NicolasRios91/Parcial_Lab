@@ -13,7 +13,7 @@ typedef struct
     int id;
     char nombre[40];
     char tipo[20];
-    char raza[20];
+    char raza[30];
     int edad;
     float peso;
     char sexo;

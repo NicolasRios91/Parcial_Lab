@@ -16,6 +16,7 @@ typedef struct
     int edad;
     char sexo;
     int isEmpty;
+    int idLocalidad;
 }eCliente;
 
 

@@ -9,7 +9,7 @@ void HardcodearCliente(eCliente listaClientes[],int sizeClientes)//PUNTO 1
     int id[5]={1,2,3,4,5};
     char nombre [5][40]={"Ana","Luis","Lucia","Dante","Carlos"};
     char apellido[5][40]={"AAA","BBB","CCC","DDD","EEE"};
-    char localidad[5][30]={"MORON","MERLO","EZEIZA","CABA","QUILMES"};
+    char localidad[5][30]={"Quilmes","Rosario","Rosario","Santa Rosa","Quilmes"};
     char telefono[5][20]={"0111500046001","+15460046002","0460046003","+0460046004","460046005"};
     int edad[5] = {30,35,18,19,30};
     char sexo[5]={'F','M','F','M','M'};
@@ -217,7 +217,7 @@ int ModificarCliente(eCliente listaClientes[],int sizeCliente, int IdIngresada,c
                         LimpiarPantalla();
                         break;
                     case 4:
-                        getStr("Ingrese el nuevo numero de contacto",aux.telefono,LARGOSTR);
+                        getStr("Ingrese el nuevo numero de contacto: ",aux.telefono,LARGOSTR);
                         cambios='y';
                         printf("%s\n",msj);
                         LimpiarPantalla();
@@ -285,6 +285,7 @@ int ModificarCliente(eCliente listaClientes[],int sizeCliente, int IdIngresada,c
                         break;
                     default:
                         printf("Ingrese una opcion valida\n");
+                        LimpiarPantalla();
                 }
             }while(opcion!=8);
         break;

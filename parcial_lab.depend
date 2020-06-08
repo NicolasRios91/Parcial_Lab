@@ -51,3 +51,113 @@
 1591647306 source:c:\users\nico\desktop\codeblock\parcial_lab\cliente-mascota.c
 	"Cliente-Mascota.h"
 
+1591650315 source:c:\users\nico\desktop\parcial_lab\cliente-mascota.c
+	"Cliente-Mascota.h"
+
+1591646621 c:\users\nico\desktop\parcial_lab\cliente-mascota.h
+	"funciones.h"
+	"Cliente.h"
+	"Mascota.h"
+	"menu.h"
+	"Raza.h"
+
+1591598762 c:\users\nico\desktop\parcial_lab\funciones.h
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	<conio.h>
+
+1591598740 c:\users\nico\desktop\parcial_lab\cliente.h
+	"funciones.h"
+	"menu.h"
+
+1591633277 c:\users\nico\desktop\parcial_lab\menu.h
+	<stdio.h>
+
+1591649631 c:\users\nico\desktop\parcial_lab\mascota.h
+	"funciones.h"
+	"menu.h"
+
+1591633336 c:\users\nico\desktop\parcial_lab\raza.h
+	<stdio.h>
+	<string.h>
+	"menu.h"
+
+1591650193 source:c:\users\nico\desktop\parcial_lab\cliente.c
+	"Cliente.h"
+	"funciones.h"
+
+1591632248 source:c:\users\nico\desktop\parcial_lab\funciones.c
+	"funciones.h"
+
+1591647877 source:c:\users\nico\desktop\parcial_lab\main.c
+	"Cliente-Mascota.h"
+
+1591650248 source:c:\users\nico\desktop\parcial_lab\mascota.c
+	"Mascota.h"
+
+1591647867 source:c:\users\nico\desktop\parcial_lab\menu.c
+	"menu.h"
+
+1591649539 source:c:\users\nico\desktop\parcial_lab\raza.c
+	"Raza.h"
+
+1591653510 source:c:\users\nico\desktop\recu\recuperatorio1f2020\cliente.c
+	"Cliente.h"
+	"funciones.h"
+
+1591653408 c:\users\nico\desktop\recu\recuperatorio1f2020\cliente.h
+	"funciones.h"
+	"menu.h"
+
+1591598762 c:\users\nico\desktop\recu\recuperatorio1f2020\funciones.h
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	<conio.h>
+
+1591633277 c:\users\nico\desktop\recu\recuperatorio1f2020\menu.h
+	<stdio.h>
+
+1591632248 source:c:\users\nico\desktop\recu\recuperatorio1f2020\funciones.c
+	"funciones.h"
+
+1591647877 source:c:\users\nico\desktop\recu\recuperatorio1f2020\main.c
+	"Cliente-Mascota.h"
+
+1591646621 c:\users\nico\desktop\recu\recuperatorio1f2020\cliente-mascota.h
+	"funciones.h"
+	"Cliente.h"
+	"Mascota.h"
+	"menu.h"
+	"Raza.h"
+
+1591649631 c:\users\nico\desktop\recu\recuperatorio1f2020\mascota.h
+	"funciones.h"
+	"menu.h"
+
+1591633336 c:\users\nico\desktop\recu\recuperatorio1f2020\raza.h
+	<stdio.h>
+	<string.h>
+	"menu.h"
+
+1591647867 source:c:\users\nico\desktop\recu\recuperatorio1f2020\menu.c
+	"menu.h"
+
+1591649539 source:c:\users\nico\desktop\recu\recuperatorio1f2020\raza.c
+	"Raza.h"
+
+1591653547 source:c:\users\nico\desktop\recu\recuperatorio1f2020\cliente-mascota.c
+	"Cliente-Mascota.h"
+
+1591650923 source:c:\users\nico\desktop\recu\recuperatorio1f2020\mascota.c
+	"Mascota.h"
+
+1591653371 source:c:\users\nico\desktop\recu\recuperatorio1f2020\localidad.c
+	"localidad.h"
+
+1591653390 c:\users\nico\desktop\recu\recuperatorio1f2020\localidad.h
+	"funciones.h"
+

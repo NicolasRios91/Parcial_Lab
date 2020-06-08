@@ -3,8 +3,8 @@
 void HardcodearRaza(eRaza lista[],int sizeRaza)
 {
     int i;
-    char raza[6][20]={"pastor","dogo","gato","gato","Overo","lagarto"};
-    char pais[6][20]={"aleman","argentino","siames","persa","chileno","hungaro"};
+    char raza[6][20]={"pastor","dogo","gato","gato","lagarto","lagarto"};
+    char pais[6][20]={"aleman","argentino","siames","persa","argentino","hungaro"};
     int id[6]={1,2,3,4,5,6};
     for (i=0;i<sizeRaza;i++)
     {
